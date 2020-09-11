@@ -1,12 +1,12 @@
 import React from "react"
-import { LocationList } from "./location/LocationList.js"
-import { LocationProvider } from "./location/LocationProvider.js"
+import { Route } from "react-router-dom"
+import { NavBar } from "./nav/navBar.js"
+import { ApplicationViews } from "./ApplicationViews"
 import "./KandyKorner.css"
 
 export const Kandy = () => (
     <>
-        <LocationProvider>
-            <LocationList />
-        </LocationProvider>
+        <NavBar />
+        <ApplicationViews />
     </>
 )
